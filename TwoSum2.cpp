@@ -5,7 +5,7 @@
 
 #include <iostream>
 #include <vector>
-#inlcude <algorithm>
+#include <algorithm>
 using namespace std;
 
 vector<int> twoSum(vector<int>& nums, int target) {
