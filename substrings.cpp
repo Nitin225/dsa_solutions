@@ -1,3 +1,7 @@
+
+// Time: O(2ⁿ),
+// Space: O(n)
+
 #include<iostream>
 #include<vector>
 #include<string>
@@ -23,5 +27,5 @@ int main(){
     for(int i=0; i<ans.size(); i++){
         cout<<ans[i]<<" ";
     }
-    
+
 }
