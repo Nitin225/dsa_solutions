@@ -1,4 +1,4 @@
-// Time: O(9^n);
+// Time: O(9^n) ,  n is no of empty cell
 // Space: O(n)
 // Leetcode 37
 
