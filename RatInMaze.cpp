@@ -20,11 +20,11 @@ void  RatInMaze(vector<vector<bool>>& a, int n, int row, int col, string s){
     }
 
     if(col + 1 < n && a[row][col+1] == true){
-        RatImMaze(a, n, row, col+1, s + "R");
+        RatInMaze(a, n, row, col+1, s + "R");
     }
 
     if(row + 1 < n && a[row+1][col] == true){
-        RatImMaze(a, n, row+1, col, s + "D");
+        RatInMaze(a, n, row+1, col, s + "D");
     }
 
 }
