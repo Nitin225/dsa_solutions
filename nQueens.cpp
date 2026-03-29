@@ -68,6 +68,8 @@ void nQueens(vector<vector<char>> &board, int row){
     }
 }
 
+
+
 int main(){
     int n = 4;
 
