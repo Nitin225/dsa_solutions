@@ -23,6 +23,6 @@ int findLongestChain(vector<pair<int, int>>& pairs) {
     }
 
 int main(){
-    vector<pair<int,int>> pairs = {{1,2},{2,3},{3,4}};
+    vector<pair<int,int>> pairs = {{1,2},{2,3},{3,4}, {5,7}, {8,9}};
     cout<<findLongestChain(pairs)<<endl;
 }
