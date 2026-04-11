@@ -14,7 +14,7 @@ int findMin(int V) {
     for(int i = coins.size() - 1; i >= 0 && V > 0; i--){
         if(V >= coins[i]){
             ans += V/coins[i];
-            V = n%coins[i];
+            V = V%coins[i];
         }
     }
     return ans;
