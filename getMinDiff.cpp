@@ -1,5 +1,5 @@
-// Time Complexity : O(N * Sum) 
-// Space Complexity : O(N * Sum)
+// Time Complexity : O(N * W) 
+// Space Complexity : O(N * W)
 
 #include<iostream>
 #include<vector>
