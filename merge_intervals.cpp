@@ -30,6 +30,6 @@ int main(){
     vector<vector<int>> ans = merge(intervals);
     for(int i=0; i<ans.size(); i++){
         cout<<ans[i][0]<<" ";
-        cout<<ans[i][1]<<endl;;
+        cout<<ans[i][1]<<endl;
     }
 }
