@@ -1,4 +1,3 @@
-// Brute Force
 // Time: O(N^3);
 // Space: O(1)
 
