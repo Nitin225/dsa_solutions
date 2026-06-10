@@ -11,7 +11,7 @@ using namespace std;
 
 
 
-vector<vector<int>> fourSum(vector<int>& nums, int target) {
+vector<vector<int>> fourSum1(vector<int>& nums, int target) {
     set<vector<int>> ans;
     int n = nums.size();
     for(int i=0; i<n; i++){
@@ -33,11 +33,33 @@ vector<vector<int>> fourSum(vector<int>& nums, int target) {
     return vector<vector<int>>(ans.begin(), ans.end());
 }
 
+vector<vector<int>> fourSum2(vector<int>& nums, int target) {
+    set<vector<int>> ans;
+    int n = nums.size();
+    for(int i=0; i<n; i++){
+        for(int j=i+1; j<n; j++){
+            set<long long> s;
+            for(int k=j+1; k<n; k++){
+                long long sum = nums[i] + nums[j];
+                sum += nums[k];
+                long long fourth = target - sum;
+                if(s.find(fourth) != s.end()){
+                    vector<int> temp = {nums[i], nums[j], nums[k], (int)fourth};
+                    sort(temp.begin(), temp.end());
+                    ans.insert(temp);
+                }
+                s.insert(nums[k]);
+            }
+        }
+    }
+    return vector<vector<int>>(ans.begin(), ans.end());
+}
+
 int main(){
     vector<int> nums = {1,0,-1,0,-2,2};
     int target = 0;
 
-    vector<vector<int>> ans = fourSum(nums, target);
+    vector<vector<int>> ans = fourSum2(nums, target);
     cout<<"[";
 
     for(int i = 0; i < ans.size(); i++) {
